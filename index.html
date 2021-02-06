@@ -1,3 +1,151 @@
-<html>
-Hello
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <title>Portfolio</title>
+</head>
+<body class="bg-blue-400">
+    <div class="flex flex-wrap p-4">
+        <div class="mt-40 md:w-3/4 p-4" style="font-family: 'Poppins', sans-serif;">
+            <!-- <div class="w-auto absolute sm:m-4" style="width:60%; top:25%; left:15%; font-family: 'Poppins', sans-serif;"> -->
+                <span class="init1 text-6xl text-white"></span>
+                <br>
+                <br>
+                <span class="init2 text-4xl text-white"></span>
+                <span class="init3 text-4xl text-blue-800"></span>
+
+        </div>
+        <ul class="w-full md:w-1/4 p-4 mt-20">
+            
+            <li>
+                <div class="mt-5 mx-2 text-center rounded-lg bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 border-b-4 border-green-700 hover:border-green-500 rounded">
+                    <a href="projects.html">
+                        Projects
+                    </a>
+                </div>    
+            </li>
+            <li>
+                <div class="mt-2 mx-2 text-center rounded-lg bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 border-b-4 border-red-700 hover:border-red-500 rounded">
+                    <a href="projects.html">
+                        Who am i ?
+                    </a>
+                </div>    
+            </li>
+            <li>
+                <div class="mt-2 mx-2 text-center rounded-lg bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded">
+                    <button onclick="showDropdownOptions()" class="font-bold">
+                        <span class="select-none">Connect</span>
+                    </button>
+                </div>   
+                
+                <div id="options" class="hidden w-30 py-2 mt-2 bg-white rounded-lg shadow-xl">
+                    <a href="https://twitter.com/Drsh98" class="block px-2 py-2 text-gray-800 hover:bg-blue-500 hover:text-white">Twitter</a>
+                    <a href="https://www.linkedin.com/in/darsh-mamtora-53569318b/" class="block px-2 py-2 text-gray-800 hover:bg-blue-500 hover:text-white">LinkedIn</a>
+                </div>
+                <script>
+                    function showDropdownOptions() {
+                        document.getElementById("options").classList.toggle("hidden");
+                        document.getElementById("arrow-up").classList.toggle("hidden");
+                        document.getElementById("arrow-down").classList.toggle("hidden");
+                    }
+                </script>
+            </li>
+        </ul>
+    </div>
+
+        <!-- <div class="flex flex-col flex-wrap mx-auto my-10 sm:flex-row justify-evenly">
+            <div class="w-auto absolute sm:m-4" style="width:60%; top:25%; left:15%; font-family: 'Poppins', sans-serif;">
+                <span class="init1 text-6xl text-white"></span>
+                <br>
+                <br>
+                <span class="init2 text-4xl text-white"></span>
+                <span class="init3 text-4xl text-blue-800"></span>
+            </div>
+           
+            <div class="w-auto absolute m-8 text-gray-800 sm:m-4" style="top:25%; right:6%;">
+                <a href="projects.html" class="mx-2 rounded-lg bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded">
+                    Projects
+                </a>
+                <br>
+                <br>
+
+                    <button onclick="showDropdownOptions()" class="mx-2 rounded-lg bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded">
+                        <span class="select-none">Connect</span>
+                    </button>
+                    <div id="options" class="hidden w-30 py-2 mt-2 bg-white rounded-lg shadow-xl">
+                        <a href="https://twitter.com/Drsh98" class="block px-2 py-2 text-gray-800 hover:bg-blue-500 hover:text-white">Twitter</a>
+                        <a href="https://www.linkedin.com/in/darsh-mamtora-53569318b/" class="block px-2 py-2 text-gray-800 hover:bg-blue-500 hover:text-white">LinkedIn</a>
+                    </div>
+                <script>
+                    function showDropdownOptions() {
+                        document.getElementById("options").classList.toggle("hidden");
+                        document.getElementById("arrow-up").classList.toggle("hidden");
+                        document.getElementById("arrow-down").classList.toggle("hidden");
+                    }
+                </script>   
+            </div>
+        <div> -->
+    <script src="typed.js"></script>
+    <script>
+        var typed1 = new Typed('.init1', {
+            strings: ['<strong>Hii There ;)</strong>'],
+            typeSpeed: 40,
+            showCursor:false,
+            smartBackspace: true, // this is a default
+        });
+        var typed2 = new Typed('.init2', {
+            strings: [
+                'I\'m a 3<sup>rd</sup> year Witty Student pondering and exploring <br>',
+            ],
+            typeSpeed: 20,
+            startDelay:1800,
+            showCursor:false,
+            smartBackspace: true, // this is a default
+        });
+        var typed2 = new Typed('.init3', {
+            strings: [
+                'ReactJS',
+                'Django',
+                'Tailwind CSS',
+                'Competitive Programming',
+                'And many more techs...'
+            ],
+            typeSpeed: 40,
+            startDelay:4000,
+            showCursor:true,
+            smartBackspace: true, // this is a default
+            cursorChar:'_',
+        });
+    </script>
+    
+</body>
 </html>
+
+<!-- 
+<div class="absolute m-8 text-gray-800 sm:flex-row" >
+                <a href="projects.html" class="mx-2 rounded-lg bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded">
+                    Projects
+                </a>
+                <br> <br>
+                <button onclick="showDropdownOptions()" class="mx-2 rounded-lg bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded">
+                    <span class="select-none">Connect</span>
+                </button>
+                <div id="options" class="hidden w-30 py-2 mt-2 bg-white rounded-lg shadow-xl">
+                    <a href="https://twitter.com/Drsh98" class="block px-2 py-2 text-gray-800 hover:bg-blue-500 hover:text-white">Twitter</a>
+                    <a href="https://www.linkedin.com/in/darsh-mamtora-53569318b/" class="block px-2 py-2 text-gray-800 hover:bg-blue-500 hover:text-white">LinkedIn</a>
+                </div>
+                <script>
+                    function showDropdownOptions() {
+                        document.getElementById("options").classList.toggle("hidden");
+                        document.getElementById("arrow-up").classList.toggle("hidden");
+                        document.getElementById("arrow-down").classList.toggle("hidden");
+                    }
+                </script>   
+            </div>
+
+ -->
