@@ -19,9 +19,7 @@ function obstacle(i,j){
 	var currY = parseInt(j / h + 1);
 	//console.log(currX,currY);
 	grid[currX][currY].wall = true;
-	
 	grid[currX][currY].show(0);
-	
 }
 
 function removeFromArray(arr, elt){
@@ -110,9 +108,7 @@ function Spot(i,j){
 		if(this.wall){
 			fill(color(100,100,100));
 			noStroke();
-
 			//for different UI style
-
 			//ellipse(this.i * w + w/2, this.j * h + h/2, w/2,h/2);
 			//continoues(this.i,this.j);
 		}
@@ -173,6 +169,9 @@ function setup(){
 
 function obstacleGeneration(){
 	console.log("called");
+    clear();
+    openSet = [];
+    closedSet = [];
 	var op = sel.value();
 	if(op == "random obstacle"){
 		randomGen = true;
